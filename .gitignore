@@ -1,0 +1,4 @@
+vendor
+\.vagrant
+\.DS_Store
+htdocs/wp

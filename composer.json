@@ -1,0 +1,6 @@
+{
+    "require-dev": {
+        "wp-cli/php-cli-tools": "dev-master",
+        "wp-cli/wp-cli": "~0.9"
+    }
+}
