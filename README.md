@@ -1,6 +1,6 @@
 # wp-skeleton
 
-A set of config files and instructions to setup a development environment for making Wordpress sites.
+A set of config files and instructions to bootstrap a Vagrant LAMP stack including wp-cli suitable for developing Wordpress sites.
 
 If it all works okay you should end up with a Vagrant box set up with apache, php and mysql.
 
