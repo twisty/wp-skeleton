@@ -4,7 +4,7 @@ A set of config files and instructions to setup a development environment for ma
 
 If it all works okay you should end up with a Vagrant box set up with apache, php and mysql.
 
-wp-cli is also installed ready to start wrangling Wordpress.  
+[wp-cli](http://wp-cli.org/) is also installed ready to start wrangling Wordpress.  
 
 ## Requirements
 
@@ -38,6 +38,6 @@ Run `vagrant-up` to run an Ubuntu LAMP stack. Go to http://localhost:8888/ to se
 
 ### wp-cli
 
-[wp-cli](http://wp-cli.org/) should be available at `./vendor/bin/wp`. It is set up to use `./htdocs/wp/` as the Wordpress location.
+wp-cli should be available at `./vendor/bin/wp`. It is set up to use `./htdocs/wp/` as the Wordpress location.
 
 For example: run `./vendor/bin/wp core download` to download the latest Wordpress and (if using Vagrant) go to http://localhost:8888/wp/ to view.
