@@ -34,7 +34,11 @@ Get [Composer](http://getcomposer.org/) and install it.
 
 ### Vagrant
 
-Run `vagrant-up` to run an Ubuntu LAMP stack. Go to http://localhost:8888/ to see the files served from `./htdocs`.
+Run `vagrant-up` to run an Ubuntu LAMP stack.
+
+Go to http://localhost:8888/ to see the files served from `./htdocs`.
+
+The initial mysql root password is set to: `wp-skeleton`.
 
 ### wp-cli
 
