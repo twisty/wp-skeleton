@@ -2,7 +2,7 @@
 
 ## Vagrant
 
-Get [Vagrant](http://www.vagrantup.com/) and install it.
+Get [Vagrant](http://www.vagrantup.com/) (version 1.1 or better) and install it.
 
 ## Puppet modules
 
