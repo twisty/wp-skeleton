@@ -1,21 +1,3 @@
-file { '/var/www':
-  ensure => link,
-  target => "/vagrant/htdocs",
-  force  => true
-}
-
-include mysql
-include apache
-
-class { 'mysql::server':
-  config_hash => { 'root_password' => 'wp-skeleton' }
-}
-
-class {'apache::mod::php': }
-
-apache::mod { 'rewrite': }
-apache::mod { 'expires': }
-
 class php {
   package { "php5": ensure => present }
   package { "php5-sqlite": ensure => present }
@@ -25,3 +7,35 @@ class php {
 }
 
 include php
+include mysql
+include apache
+
+class { "mysql::server":
+  config_hash => {
+    "root_password" => "wp-skeleton",
+    "bind_address" => "0.0.0.0",
+  }
+}
+
+database_user { "@localhost":
+  ensure => absent,
+  require => Class["mysql::server"],
+}
+
+mysql::db { "wordpress":
+  user     => "wp-skeleton",
+  password => "wp-skeleton",
+  host     => "%",
+  grant    => ["all"],
+}
+
+file { "/var/www":
+  ensure => link,
+  target => "/vagrant/htdocs",
+  force  => true,
+}
+
+class {"apache::mod::php": }
+
+apache::mod { "rewrite": }
+apache::mod { "expires": }
