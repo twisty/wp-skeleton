@@ -7,7 +7,7 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 80, 8888
   config.vm.forward_port 3306, 3306
   config.vm.share_folder "v-root", "/vagrant", ".", :owner=> "www-data", :group=>"www-data"
-  config.vm.provision :shell, :inline => "apt-get update --fix-missing"
+  config.vm.provision :shell, :inline => "apt-get update --fix-missing; apt-get -y upgrade"
   config.vm.provision :puppet do |puppet|
     puppet.module_path = "~/.puppet/modules"
     puppet.manifests_path = "puppet/manifests"
