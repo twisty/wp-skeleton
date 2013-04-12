@@ -2,8 +2,14 @@
 
 A set of config files and instructions to bootstrap an environment suitable for developing Wordpress sites.
 
+## Requirements
+
+You’ll need [Composer](http://getcomposer.org/).
+
 ## Install
 
+    git clone https://github.com/twisty/wp-skeleton.git  
+    git submodule update --init  
     composer update
 
 ## Getting started
