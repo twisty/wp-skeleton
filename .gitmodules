@@ -1,0 +1,3 @@
+[submodule "wp-vagrant-apache"]
+	path = wp-vagrant-apache
+	url = https://github.com/twisty/wp-vagrant-apache.git
