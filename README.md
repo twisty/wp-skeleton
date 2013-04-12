@@ -31,6 +31,6 @@ Go to [http://localhost:8888/](http://localhost:8888/) to see the files served f
 
 [wp-cli](http://wp-cli.org/) is available at `./vendor/bin/wp` ready to start wrangling Wordpress.  
 
-It is set up to use `./htdocs/wp/` as the Wordpress location.
+It is set up to use `./htdocs/wordpress/` as the Wordpress location.
 
-For example: run `./vendor/bin/wp core download` to download the latest Wordpress and (if using Vagrant) go to [http://localhost:8888/wp/](http://localhost:8888/wp/) to view.
+For example: run `./vendor/bin/wp core download` to download the latest Wordpress and (if using Vagrant) go to [http://localhost:8888/wordpress/](http://localhost:8888/wordpress/) to view.
