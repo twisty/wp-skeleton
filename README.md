@@ -31,6 +31,11 @@ Go to [http://localhost:8888/](http://localhost:8888/) to see the files served f
 
 [wp-cli](http://wp-cli.org/) is available at `./vendor/bin/wp` ready to start wrangling Wordpress.  
 
-It is set up to use `./htdocs/wordpress/` as the Wordpress location.
+For example: start Vagrant, then run `./setup-wordpress.sh`. This will:
 
-For example: run `./vendor/bin/wp core download` to download the latest Wordpress and (if using Vagrant) go to [http://localhost:8888/wordpress/](http://localhost:8888/wordpress/) to view.
+* Download the latest Wordpress.
+* Add a default “author” user.
+* Scaffold some dummy posts.
+* Install some useful development plugins.
+
+Wordpress will be installed to `./htdocs/wordpress/` and viewable at [http://localhost:8888/wordpress/](http://localhost:8888/wordpress/).
