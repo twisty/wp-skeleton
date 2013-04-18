@@ -23,7 +23,7 @@ You’ll need [Composer](http://getcomposer.org/).
 
 This may require a bit of setup, read the [separate install file](https://github.com/twisty/wp-vagrant-apache/blob/master/INSTALL.md) for details.
 
-Run run an Ubuntu LAMP stack:
+Run an Ubuntu LAMP stack:
 
     cd wp-vagrant-apache  
     vagrant up
