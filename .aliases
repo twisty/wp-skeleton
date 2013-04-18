@@ -1,0 +1,2 @@
+# type "source .aliases" to add the local composer version of wp to your shell.
+alias wp="`pwd`/vendor/bin/wp"
